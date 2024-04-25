@@ -1,116 +1,99 @@
-/*console.log("Olá!");
+/* função simples
+function imprimirNoConsole(){
 
-
-
-// quando usa const, não altera o valor
-// let pode alterar o valor.
-
-let idade = prompt("Qual a sua idade?")
-console.log(idade);
-
-let nome = prompt("Qual o seu nome?");
-console.log(nome);
-*/
-
-// Exercicio 7 (1 Slide de JavaScript)
-
-/*let idade = prompt("Qual a sua idade?");
-
-if (idade >=18){
-    console.log("Pode entrar");
-}else{
-    console.log("Não pode entrar!");
+    console.log("OIIII");
 }
+
+imprimirNoConsole();
+
+// quando cria uma função e há algo dentro, quando chama a função, ele vai executar o que estiver dentro da função.
+
 */
 
-//Exercicio 8
+/*------------------------------------------------------------------------------------------------------------------- */
 
-/*let nome = ""
+/* função por parametro
+function imprimirUmNumero(num){
 
-nome?console.log("Nome verdadeiro"):console.log("nao existe")
-*/
-
-//Exercicio 9
-
-
-/*let a = console.log(Math.pow(2,2))
-let b=console.log(Math.pow(3,2))
-let c=console.log(Math.pow(18,2))
-*/
-
-//Exercicio 10
-
-/*let velocidade = prompt("Digite a velocidade: ")
-
-if (velocidade <= 80){
-    console.log("velocidade permitida")
-    
-}else{
-    console.log("Velocidade não permitida!")
+    console.log("Numero: " + num);
 }
+
+imprimirUmNumero(24);
 */
 
-//Exercicio 11
+/*------------------------------------------------------------------------------------------------------------------- */
 
-/*let idade = 18;
-let CNH = false;
-
-if (idade >=18 && CNH == true){
-    console.log("Pode dirigir");
-    
-}else{
-    console.log("Não pode dirigir");
+/*const numeroAleatorio = function(){
+    console.log(Math.random());
 }
+
+numeroAleatorio();
+numeroAleatorio();
+numeroAleatorio();
 */
 
-//Exercicio 12
+/*------------------------------------------------------------------------------------------------------------------- */
 
-/*let i = 0;
 
-while(i<=10){
-    console.log(i)
-    i++;
+/*function multiplicarNumero(x,y,z){
+    return x * y * z;
 }
+
+console.log(multiplicarNumero(2,3,6));
 */
 
-//Exercicio 13
+/*------------------------------------------------------------------------------------------------------------------- */
 
-/*for (let i = 100; i>=50; i--){
-    console.log(i)
-}
-*/
+/*function podeDirigir(idade,cnh){
 
-//Exercicio 14
+    if (idade>=18 && cnh == true){
 
-/*for(let i=0;i<=50;i++){
-
-    if (i%2==0){
-        console.log(`Numero Par ${i} par`)
+        console.log("Pode dirigir")
     }else{
-        console.log(`O número é ${i} ímpar`)
-    }
-}
-*/
-
-//Exercicio 15
-
-/*let num = 24;
-let divisor = 0;
-
-for(let i = 1; i<=num; i++){
-
-    if (num % i == 0){
-        divisor++
-    }
-
-    if(divisor ==2){
-        console.log(`O numero ${num} é primo`)
-    }else{
-        console.log(`O numero ${num} não é primo`)
+        console.log("Não tem permissão para dirigir");
     }
 }
 
-corrigir isso
+console.log(podeDirigir(19,true));
+console.log(podeDirigir(17,false));
 */
+
+/*------------------------------------------------------------------------------------------------------------------- */
+
+/*Escopo de uma função (global,local), só faz isso com let
+
+let y = 10;
+
+function imprimir(){
+    let y = 150;
+    console.log(y)
+}
+
+imprimir();
+console.log(y);
+
+*/
+
+/*------------------------------------------------------------------------------------------------------------------- */
+
+/*let consoleTeste = () =>{
+    console.log("OIIIIII");
+}
+
+consoleTeste();
+*/
+
+/*------------------------------------------------------------------------------------------------------------------- */
+
+/*let soma = (a,b) =>{
+    return a+b;
+
+}
+
+console.log(soma(1,2))
+*/
+
+/*------------------------------------------------------------------------------------------------------------------- */
+
 
 
