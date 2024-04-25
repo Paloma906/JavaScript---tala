@@ -1,99 +1,119 @@
-/* função simples
-function imprimirNoConsole(){
+/*console.log("Olá!");
 
-    console.log("OIIII");
-}
 
-imprimirNoConsole();
 
-// quando cria uma função e há algo dentro, quando chama a função, ele vai executar o que estiver dentro da função.
+// quando usa const, não altera o valor
+// let pode alterar o valor.
 
+let idade = prompt("Qual a sua idade?")
+console.log(idade);
+
+let nome = prompt("Qual o seu nome?");
+console.log(nome);
 */
 
-/*------------------------------------------------------------------------------------------------------------------- */
+// Exercicio 7 (1 Slide de JavaScript)
 
-/* função por parametro
-function imprimirUmNumero(num){
+/*let idade = prompt("Qual a sua idade?");
 
-    console.log("Numero: " + num);
+if (idade >=18){
+    console.log("Pode entrar");
+}else{
+    console.log("Não pode entrar!");
 }
-
-imprimirUmNumero(24);
 */
 
-/*------------------------------------------------------------------------------------------------------------------- */
+//Exercicio 8
 
-/*const numeroAleatorio = function(){
-    console.log(Math.random());
-}
+/*let nome = ""
 
-numeroAleatorio();
-numeroAleatorio();
-numeroAleatorio();
+nome?console.log("Nome verdadeiro"):console.log("nao existe")
 */
 
-/*------------------------------------------------------------------------------------------------------------------- */
+//Exercicio 9
 
 
-/*function multiplicarNumero(x,y,z){
-    return x * y * z;
-}
-
-console.log(multiplicarNumero(2,3,6));
+/*let a = console.log(Math.pow(2,2))
+let b=console.log(Math.pow(3,2))
+let c=console.log(Math.pow(18,2))
 */
 
-/*------------------------------------------------------------------------------------------------------------------- */
+//Exercicio 10
 
-/*function podeDirigir(idade,cnh){
+/*let velocidade = prompt("Digite a velocidade: ")
 
-    if (idade>=18 && cnh == true){
+if (velocidade <= 80){
+    console.log("velocidade permitida")
+    
+}else{
+    console.log("Velocidade não permitida!")
+}
+*/
 
-        console.log("Pode dirigir")
+//Exercicio 11
+
+/*let idade = 18;
+let CNH = false;
+
+if (idade >=18 && CNH == true){
+    console.log("Pode dirigir");
+    
+}else{
+    console.log("Não pode dirigir");
+}
+*/
+
+//Exercicio 12
+
+/*let i = 0;
+
+while(i<=10){
+    console.log(i)
+    i++;
+}
+*/
+
+//Exercicio 13
+
+/*for (let i = 100; i>=50; i--){
+    console.log(i)
+}
+*/
+
+//Exercicio 14
+
+/*for(let i=0;i<=50;i++){
+
+    if (i%2==0){
+        console.log(`Numero Par ${i} par`)
     }else{
-        console.log("Não tem permissão para dirigir");
+        console.log(`O número é ${i} ímpar`)
+    }
+}
+*/
+
+//Exercicio 15
+
+/*let num = 24;
+let divisor = 0;
+
+for(let i = 1; i<=num; i++){
+
+    if (num % i == 0){
+        divisor++
+    }
+
+    if(divisor ==2){
+        console.log(`O numero ${num} é primo`)
+    }else{
+        console.log(`O numero ${num} não é primo`)
     }
 }
 
-console.log(podeDirigir(19,true));
-console.log(podeDirigir(17,false));
+corrigir isso
 */
 
-/*------------------------------------------------------------------------------------------------------------------- */
 
-/*Escopo de uma função (global,local), só faz isso com let
-
-let y = 10;
-
-function imprimir(){
-    let y = 150;
-    console.log(y)
-}
-
-imprimir();
-console.log(y);
-
-*/
-
-/*------------------------------------------------------------------------------------------------------------------- */
-
-/*let consoleTeste = () =>{
-    console.log("OIIIIII");
-}
-
-consoleTeste();
-*/
-
-/*------------------------------------------------------------------------------------------------------------------- */
-
-/*let soma = (a,b) =>{
-    return a+b;
-
-}
-
-console.log(soma(1,2))
-*/
-
-/*------------------------------------------------------------------------------------------------------------------- */
 
 
 
