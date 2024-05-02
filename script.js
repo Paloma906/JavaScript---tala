@@ -1,118 +1,151 @@
-/*console.log("Olá!");
+// 02/05/2024      tipos
 
+/*------------------------------------------------------------------ */
 
+// Array
+/*let arr = [1,2,3,6,7];
+let nomes = ["Paloma","Paola","Dezi"];
+let boll = [true,false,true];
+let misturado =[1,"Paloma",true];
 
-// quando usa const, não altera o valor
-// let pode alterar o valor.
-
-let idade = prompt("Qual a sua idade?")
-console.log(idade);
-
-let nome = prompt("Qual o seu nome?");
-console.log(nome);
+console.log(arr[1]);
+console.log(nomes[0]);
+console.log(boll[2]);
+console.log(arr[arr.length -1]);
 */
 
-// Exercicio 7 (1 Slide de JavaScript)
+// Transformar letra em minúscula em maiúscula
 
-/*let idade = prompt("Qual a sua idade?");
-
-if (idade >=18){
-    console.log("Pode entrar");
-}else{
-    console.log("Não pode entrar!");
-}
+/*let marca = "Nike";
+console.log(marca.toUpperCase())
 */
 
-//Exercicio 8
+//-------------------------------------------------------------------------------------------
+/* OBJETOS
 
-/*let nome = ""
+let cachorro = {
+    patas: 4,
+    nome : `Bob`,
 
-nome?console.log("Nome verdadeiro"):console.log("nao existe")
-*/
-
-//Exercicio 9
-
-
-/*let a = console.log(Math.pow(2,2))
-let b=console.log(Math.pow(3,2))
-let c=console.log(Math.pow(18,2))
-*/
-
-//Exercicio 10
-
-/*let velocidade = prompt("Digite a velocidade: ")
-
-if (velocidade <= 80){
-    console.log("velocidade permitida")
-    
-}else{
-    console.log("Velocidade não permitida!")
-}
-*/
-
-//Exercicio 11
-
-/*let idade = 18;
-let CNH = false;
-
-if (idade >=18 && CNH == true){
-    console.log("Pode dirigir");
-    
-}else{
-    console.log("Não pode dirigir");
-}
-*/
-
-//Exercicio 12
-
-/*let i = 0;
-
-while(i<=10){
-    console.log(i)
-    i++;
-}
-*/
-
-//Exercicio 13
-
-/*for (let i = 100; i>=50; i--){
-    console.log(i)
-}
-*/
-
-//Exercicio 14
-
-/*for(let i=0;i<=50;i++){
-
-    if (i%2==0){
-        console.log(`Numero Par ${i} par`)
-    }else{
-        console.log(`O número é ${i} ímpar`)
-    }
-}
-*/
-
-//Exercicio 15
-
-/*let num = 24;
-let divisor = 0;
-
-for(let i = 1; i<=num; i++){
-
-    if (num % i == 0){
-        divisor++
+    latir: function(){
+        console.log("AU AU")
     }
 
-    if(divisor ==2){
-        console.log(`O numero ${num} é primo`)
-    }else{
-        console.log(`O numero ${num} não é primo`)
+};
+
+console.log(cachorro.patas);
+console.log(cachorro.nome);
+cachorro.latir();
+*/
+
+//-------------------------------------------------------------------------------------------
+/* deletar e adicionar propriedades no objeto
+
+let pessoa = {
+    nome: "Paloma",
+    idade: 39,
+    Profissão: "herdeira",
+
+}
+
+console.log(pessoa);
+delete pessoa.nome;
+console.log(pessoa);
+
+pessoa.casada = false;
+console.log(pessoa);
+
+*/
+
+//---------------------------------------------------------------------------------------------
+/* herdar ( carro herda propriedades de adicional)
+
+let carro = {
+    portas:2,
+    motor:5,
+
+
+};
+console.log(carro);
+
+let adicional = {
+    tetoSola: true,
+    ar: true,
+};
+
+Object.assign(carro,adicional);
+console.log(carro);
+
+*/
+
+//------------------------------------------------------------------------------------------------
+// Mutação (cria dois objetos iguais)
+//--------------------------------------------------------------------------------------------------
+// loops de Array
+
+/*let nomes = ["Ana","Paloma","Dezi","Paola","Patricia"]
+
+for(let i=0; i<= nomes.length; i++){
+    console.log(nomes[i]);
+
+}
+*/
+//------------------------------------------------------------------------------------------------------
+// push e pop
+
+
+/*let nomes = ["Ana","Paloma","Dezi","Paola","Patricia"]
+
+let remover = nomes.pop();
+
+console.log(remover);
+console.log(nomes);
+
+nomes.push("Felipe");
+console.log(nomes);
+
+*/
+
+
+// indexOf e lastIndexOf
+
+// forEach
+
+/*let nomes = ["Ana","Paloma","Dezi","Paola","Patricia"]
+
+nomes.forEach(nomes =>{
+    console.log("O nome é: " + nomes);
+});
+
+*/
+
+// includes (aparece falso or true)
+
+/*let nomes = ["Ana","Paloma","Dezi","Paola","Patricia"]
+
+console.log(nomes.includes("Dezi"));
+*/
+
+// ----------------------------------------------------------------------------
+
+/*let num = 1;
+let num1= 5;
+let num2 = 10;
+let num3 = 20;
+
+function imprimirNumeros(...arg){
+    for(let i=0; i< arg.length ; i++){
+        console.log(arg[i]);
     }
 }
 
-corrigir isso
-*/
+imprimirNumeros(num,num1);
+console.log(`pausa`);
+imprimirNumeros(num3);
+console.log(`pausa`);
+imprimirNumeros(1,2,3,4,5,6,7,8,9,10);
 
+*/
 
 
 
